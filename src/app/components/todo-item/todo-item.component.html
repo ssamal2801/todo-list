@@ -1,4 +1,10 @@
-<span
-  ><b>Task Number:{{ todo.slno }}</b></span
-><br />
-<span>{{ todo.desc }}</span>
+<div>
+  <span
+    ><b>Task Number:{{ todo.slno }}</b>
+    <button type="button" class="btn btn-danger" (click)="deleteItem(todo)">
+      Delete
+    </button>
+    <br />
+    {{ todo.desc }}</span
+  >
+</div>

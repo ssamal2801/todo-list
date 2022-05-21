@@ -36,6 +36,9 @@ export class TodosComponent implements OnInit {
       },
     ];
   }
-
+  deleteItemEvent(todo: TodoModel) {
+    let index = this.todos.indexOf(todo);
+    this.todos.splice(index, 1);
+  }
   ngOnInit(): void {}
 }

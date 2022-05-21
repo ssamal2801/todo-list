@@ -1,7 +1,10 @@
 <div class="todoContainer">
   <ul>
     <li *ngFor="let item of todos">
-      <app-todo-item [todo]="item"></app-todo-item>
+      <app-todo-item
+        [todo]="item"
+        (deleteItemEvent)="deleteItemEvent($event)"
+      ></app-todo-item>
     </li>
   </ul>
 </div>
