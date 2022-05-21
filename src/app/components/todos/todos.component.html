@@ -1,1 +1,7 @@
-<p>todos works!</p>
+<div class="todoContainer">
+  <ul>
+    <li *ngFor="let item of todos">
+      <app-todo-item [todo]="item"></app-todo-item>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,13 @@
+.todoContainer {
+  padding: 1.5rem;
+  width: 100%;
+  ul {
+    list-style: circle;
+  }
+  li {
+    padding: 1rem;
+    &:nth-child(odd) {
+      background-color: rgb(209, 209, 209);
+    }
+  }
+}
